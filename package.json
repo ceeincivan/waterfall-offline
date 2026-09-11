@@ -12,7 +12,10 @@
     "lint": "eslint .",
     "format": "prettier --write .",
     "predev": "node scripts/ensure-deps.mjs",
-    "prebuild": "node scripts/ensure-deps.mjs"
+    "prebuild": "node scripts/ensure-deps.mjs",
+    "pretest": "node scripts/ensure-deps.mjs",
+    "prelint": "node scripts/ensure-deps.mjs",
+    "pretypecheck": "node scripts/ensure-deps.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.7.0",
