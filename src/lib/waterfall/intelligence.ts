@@ -114,7 +114,7 @@ export function parseNaturalLanguageTxn(text: string, state: WaterfallState): Na
   let amountMinor = 0;
   const amountMatch = lower.match(/(?:ksh|sh|kes|\$)?\s*([\d,]+(?:\.\d+)?)(?:\s*([km])(?!\w|-))?/i);
   if (amountMatch) {
-    let numStr = amountMatch[1].replace(/,/g, "");
+    const numStr = amountMatch[1].replace(/,/g, "");
     let num = parseFloat(numStr);
     const suffix = amountMatch[2]?.toLowerCase();
     if (suffix === "k") num *= 1000;
