@@ -1,3 +1,4 @@
+dist/
 node_modules/
 .project_id
 .github_repo
