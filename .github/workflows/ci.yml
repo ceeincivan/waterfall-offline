@@ -20,8 +20,8 @@ jobs:
           node-version: 22
           cache: 'npm'
 
-      - name: Ensure dependencies are installed
-        run: node scripts/ensure-deps.mjs
+      - name: Install dependencies
+        run: npm ci
 
       - name: Run ESLint
         run: npm run lint
