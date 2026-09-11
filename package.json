@@ -13,6 +13,7 @@
     "format": "prettier --write .",
     "predev": "node scripts/ensure-deps.mjs",
     "prebuild": "node scripts/ensure-deps.mjs",
+    "build:apk-prep": "node scripts/build-apk-prep.mjs",
     "pretest": "node scripts/ensure-deps.mjs",
     "prelint": "node scripts/ensure-deps.mjs",
     "pretypecheck": "node scripts/ensure-deps.mjs"
@@ -66,6 +67,9 @@
     "zustand": "^5.0.0"
   },
   "devDependencies": {
+    "@capacitor/android": "^8.5.2",
+    "@capacitor/cli": "^8.5.2",
+    "@capacitor/core": "^8.5.2",
     "@eslint/js": "^9.20.0",
     "@types/node": "^22.16.5",
     "@types/react": "^19.2.0",
